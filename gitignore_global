@@ -1,0 +1,9 @@
+*.swp
+*.swo
+tags
+cucumber_rerun.txt
+.envrc
+*.dump
+.DS_Store
+rubocop*
+.byebug_history

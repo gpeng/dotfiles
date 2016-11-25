@@ -1,0 +1,47 @@
+[user]
+  name = Graham Pengelly
+  email = graham@three-tier.com
+[github]
+  user = gpeng
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[alias]
+  c = commit -m
+  a = add
+  di = diff
+  dic = diff --cached
+  pl = pull --rebase
+  pull = pull --rebase
+  ps = push
+  st = status
+  out = log origin..HEAD
+  lol = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  hpush = push heroku master
+  ci = commit
+  co = checkout
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  conflicts = diff --name-only --diff-filter=U
+  amend = commit -a --amend --no-edit
+  whatadded = log --diff-filter=A
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
+  rbi = rebase -i --autosquash
+[core]
+  excludesfile = /Users/graham/.gitignore_global
+[push]
+  default = current
+[filter "media"]
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
+[commit]
+  gpgsign = true
+[diff]
+  compactionHeuristic = 1
+[pager]
+  log = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less
+  show = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less
+  diff = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less
+[interactive]
+  diffFilter = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight
