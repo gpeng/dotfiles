@@ -1,6 +1,4 @@
 tap 'ethereum/ethereum'
-tap 'sammy007/cryptonight/
-
 brew 'ctags'
 brew 'direnv'
 brew 'elasticsearch', service_restart: true
@@ -17,7 +15,6 @@ brew 'phantomjs'
 brew 'postgresql', service_restart: true
 brew 'python'
 brew 'redis', service_restart: true
-brew 'sammy007/cryptonight/monero'
 brew 'terraform'
 brew 'the_silver_searcher'
 brew 'tmux'
