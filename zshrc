@@ -29,6 +29,9 @@ alias mine='cd ~/Repos/mine/'
 alias mv-invoice='ls -t ~/Downloads | head -1 | xargs -I % mv -v ~/Downloads/% ~/Documents/Receipts/`date "+%Y-%m-%d-%H:%M:%S"`-%'
 alias sal='cd ~/Repos/mine/sendaletterhome.com'
 
+alias ta='f() { $1 }; tmux attach -t `f`'
+alias tl='tmux ls'
+
 export NVM_DIR="/Users/graham/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
