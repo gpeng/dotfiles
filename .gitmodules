@@ -46,3 +46,6 @@
 [submodule "tmux/plugins/tmux-pain-control"]
 	path = tmux/plugins/tmux-pain-control
 	url = git@github.com:tmux-plugins/tmux-pain-control.git
+[submodule "vim/bundle/vim-ruby"]
+	path = vim/bundle/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
