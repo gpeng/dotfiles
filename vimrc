@@ -235,7 +235,7 @@ autocmd FileType c,cpp,java,php,ruby,python,haml,html,scss,sass,feature autocmd 
 
 " Rspec.vim mappings
 let g:rspec_runner = "os_x_iterm2"
-" let g:rspec_command = '!bundle exec bin/rspec {spec} --color'
+let g:rspec_command = '!bundle exec bin/rspec {spec} --color'
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
@@ -247,7 +247,7 @@ command Fh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
 let g:syntastic_ruby_exec = '/Users/graham/.rbenv/shims/ruby'
 
 " 80 character marker
-highlight ColorColumn ctermbg=10
+highlight ColorColumn ctermbg=8
 let &colorcolumn=join(range(80,80),",")
 
 " stop those pesky swp warnings
