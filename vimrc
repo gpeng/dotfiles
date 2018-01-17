@@ -6,6 +6,7 @@ set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set backspace=indent,eol,start
 
 runtime macros/matchit.vim
 
