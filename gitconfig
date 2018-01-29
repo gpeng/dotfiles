@@ -26,7 +26,10 @@
   amend = commit -a --amend --no-edit
   whatadded = log --diff-filter=A
   cleanup = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
-  rbi = rebase -i --autosquash
+  fixup = "!f() { \
+      git commit --fixup $1; \
+    }; f"
+  autosquash = rebase -i master --autosquash
 [core]
   excludesfile = /Users/graham/.gitignore_global
 [push]
