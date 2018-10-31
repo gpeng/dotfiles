@@ -8,7 +8,7 @@
   status = auto
   branch = auto
 [alias]
-  c = commit -m
+  c = commit -v
   a = add
   di = diff
   dic = diff --cached
@@ -30,6 +30,7 @@
       git commit --fixup $1; \
     }; f"
   autosquash = rebase -i master --autosquash
+  wip = commit -m 'WIP'
 [core]
   excludesfile = /Users/graham/.gitignore_global
 [push]
