@@ -186,7 +186,7 @@ map ]b :bn<cr>
 nnoremap <C-t> :GFiles<Cr>
 nnoremap <C-g> :Ag<Cr>
 
-map <Leader>f :!dotenv bundle exec rubocop -a % <CR>
+map <Leader>f :ALEFix<Cr>
 
 let g:rspec_command = "Dispatch dotenv bundle exec rspec {spec}"
 
@@ -196,3 +196,8 @@ let g:vim_json_syntax_conceal = 0
 set shell=/usr/local/bin/zsh
 
 hi EasyMotionMoveHLDefault cterm=bold ctermfg=242 ctermbg=10 gui=bold guifg=#CCCCCC guibg=#7fbf00
+
+let g:ale_fixers = {
+      \   'javascript': ['eslint'],
+      \   'ruby': ['rubocop'],
+      \}
