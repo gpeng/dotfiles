@@ -32,6 +32,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
+set signcolumn=yes
 
 "scrolling maxes out all cores at the mo without this
 "https://github.com/vim/vim/issues/2584

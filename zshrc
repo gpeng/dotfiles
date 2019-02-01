@@ -51,14 +51,14 @@ fi
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 export PATH="/Users/graham/Library/Python/3.6/lib/python/site-packages:$PATH"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/graham/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/graham/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/graham/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/graham/google-cloud-sdk/completion.zsh.inc'; fi
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 
 fpath=(/usr/local/share/zsh/site-functions $fpath)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/graham/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/graham/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/graham/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/graham/google-cloud-sdk/completion.zsh.inc'; fi
