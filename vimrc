@@ -14,6 +14,7 @@ Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'hashivim/vim-terraform'
 
 Plug 'wesgibbs/vim-irblack'
 
@@ -133,7 +134,7 @@ endfun
 
 " auto-strip trailing white space for ruby files
 " autocmd BufWritePre *.rb :call <SID>StripTrailingWhitespaces()
-autocmd FileType c,cpp,java,php,ruby,python,haml,html,javascript,scss,sass,feature,yaml,typescript,vue,erb autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,haml,html,javascript,scss,sass,feature,yaml,typescript,vue,erb,tf autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 nnoremap <leader><leader> <c-^>
 map <Leader>m :RTmodel
