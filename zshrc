@@ -48,7 +48,7 @@ if [ -f ~/.secrets_env ]; then
   source ~/.secrets_env
 fi
 
-export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+export PATH="$(brew --prefix qt)/bin:$PATH"
 export PATH="/Users/graham/Library/Python/3.6/lib/python/site-packages:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
