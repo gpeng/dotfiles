@@ -15,6 +15,7 @@
   pl = pull --rebase
   pull = pull --rebase
   ps = push
+  pf = push --force-with-lease
   st = status
   out = log origin..HEAD
   lol = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
@@ -49,3 +50,5 @@
   diff = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less
 [interactive]
   diffFilter = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight
+[pull]
+  rebase = true

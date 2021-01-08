@@ -15,6 +15,9 @@ Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'hashivim/vim-terraform'
+Plug 'rust-lang/rust'
+Plug 'leafgarland/typescript-vim'
+Plug 'lepture/vim-jinja'
 
 Plug 'wesgibbs/vim-irblack'
 
@@ -155,14 +158,13 @@ map <leader>v :view %%
 " close a buffer in a split without closing the split
 command! BD bn\|bd \# <cr>
 
-command! Tb :Tabularize<cr>
-
 " write with sudo
 cmap w!! w !sudo tee % > /dev/null
 
 " Rspec.vim mappings
 let g:rspec_runner = "os_x_iterm2"
-let g:rspec_command = '!bundle exec bin/rspec {spec} --color'
+" let g:rspec_command = "Dispatch bundle exec ./bin/rspec {spec} --color"
+let g:rspec_command = "Dispatch bundle exec rspec {spec} --color"
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
@@ -190,7 +192,6 @@ nnoremap <C-g> :Ag<Cr>
 
 map <Leader>f :ALEFix<Cr>
 
-let g:rspec_command = "Dispatch dotenv bundle exec rspec {spec}"
 
 " don't hide quotes in json
 let g:vim_json_syntax_conceal = 0
@@ -203,3 +204,4 @@ let g:ale_fixers = {
       \   'javascript': ['eslint'],
       \   'ruby': ['rubocop'],
       \}
+let g:user_emmet_leader_key=','

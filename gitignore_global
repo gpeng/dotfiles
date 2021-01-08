@@ -7,3 +7,4 @@ cucumber_rerun.txt
 .DS_Store
 rubocop*
 .byebug_history
+*.sql.gz
